@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './sections/HeroSection';
 import ProjectsSection from './sections/ProjectsSection';
 import AboutSection from './sections/AboutSection';
+import ContactSection from './sections/ContactSection';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <ProjectsSection />
       <AboutSection />
+      <ContactSection />
     </>
   )
 }
