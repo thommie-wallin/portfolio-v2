@@ -3,6 +3,7 @@ import HeroSection from './sections/HeroSection';
 import ProjectsSection from './sections/ProjectsSection';
 import AboutSection from './sections/AboutSection';
 import ContactSection from './sections/ContactSection';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
+      <Footer name="Thommie Wallin" />
     </>
   )
 }
