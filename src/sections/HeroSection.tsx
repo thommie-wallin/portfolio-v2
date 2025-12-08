@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { smoothScrollToId } from '../utils/smoothScroll';
 
 export default function HeroSection() {
   const [visible, setVisible] = useState(false);
@@ -7,19 +8,6 @@ export default function HeroSection() {
     const id = setTimeout(() => setVisible(true), 50);
     return () => clearTimeout(id);
   }, []);
-
-  const handleScroll = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    id: string
-  ) => {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.location.hash = `#${id}`;
-    }
-  };
 
   return (
     <section id="hero" aria-labelledby="hero-heading" className="w-full py-24">
@@ -41,7 +29,7 @@ export default function HeroSection() {
           <div className="flex justify-center gap-4">
             <a
               href="#projects"
-              onClick={(e) => handleScroll(e, 'projects')}
+              onClick={(e) => smoothScrollToId(e, 'projects')}
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-sm font-medium shadow-sm hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 transition"
               aria-label="View my work (scroll to projects)"
             >
@@ -50,7 +38,7 @@ export default function HeroSection() {
 
             <a
               href="#contact"
-              onClick={(e) => handleScroll(e, 'contact')}
+              onClick={(e) => smoothScrollToId(e, 'contact')}
               className="inline-block border border-blue-600 text-blue-600 px-6 py-3 rounded-md text-sm font-medium hover:bg-blue-50 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 transition"
               aria-label="Contact me"
             >
