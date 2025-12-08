@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { smoothScrollToId } from '../utils/smoothScroll';
 
 interface NavbarProps {
   /** Text shown in the left-side brand/link. */
@@ -9,16 +10,20 @@ export default function Navbar({ logoText = 'Your Name' }: NavbarProps) {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { href: '#hero', label: 'Home' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#about', label: 'About' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#hero', id: 'hero', label: 'Home' },
+    { href: '#projects', id: 'projects', label: 'Projects' },
+    { href: '#about', id: 'about', label: 'About' },
+    { href: '#contact', id: 'contact', label: 'Contact' },
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-sm" aria-label="Main navigation">
+    <nav id="nav" className="sticky top-0 z-50 bg-white shadow-sm" aria-label="Main navigation">
       <div className="max-w-5xl mx-auto flex justify-between items-center px-6 py-4">
-        <a href="#hero" className="text-xl font-bold text-gray-900">
+        <a 
+          href="#top" 
+          className="text-xl font-bold text-gray-900"
+          onClick={(e) => smoothScrollToId(e, 'hero')}
+        >
           {logoText}
         </a>
 
@@ -59,6 +64,7 @@ export default function Navbar({ logoText = 'Your Name' }: NavbarProps) {
             <a
               key={l.href}
               href={l.href}
+              onClick={(e) => smoothScrollToId(e, l.id)}
               className="text-gray-700 hover:text-gray-900 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"
             >
               {l.label}
@@ -75,7 +81,7 @@ export default function Navbar({ logoText = 'Your Name' }: NavbarProps) {
               <a
                 key={l.href}
                 href={l.href}
-                onClick={() => setOpen(false)}
+                onClick={(e) => {setOpen(false); smoothScrollToId(e, l.id)}}
                 className="block text-gray-700 py-2 rounded-md hover:bg-gray-50 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"
               >
                 {l.label}
