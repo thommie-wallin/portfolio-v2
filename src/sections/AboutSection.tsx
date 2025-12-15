@@ -23,9 +23,14 @@ export default function AboutSection() {
         >
           About Me
         </h2>
-        <p className="text-gray-600 text-base">
-          {/* Placeholder bio, 100–150 words */}
-          I am a passionate junior web developer dedicated to building clean, modern, and accessible web experiences. With a strong foundation in React, TypeScript, and Tailwind CSS, I enjoy transforming ideas into responsive, user-friendly interfaces. My journey in tech is driven by curiosity and a commitment to continuous learning. I thrive in collaborative environments and value clear communication, attention to detail, and creative problem-solving. Beyond coding, I am interested in design, technology trends, and personal growth. My career goal is to join a forward-thinking team where I can contribute, learn, and grow as a developer while making a positive impact on users and businesses alike.
+        <p className="text-gray-600 text-base font-extralight">
+          I first discovered my path as a developer the moment I solved a problem I had been stuck on for days — then watched the solution run flawlessly, over and over again. That sense of accomplishment, of finally unlocking the right approach for a project, is what fuels my excitement for web development. As a committed learner, I also love the blend of creativity, logic, and technology that this field brings together. 
+          <br /><br />
+          Today, I'm a Full-Stack Developer with a two-year education that gave me a solid foundation in modern web development and experience working in collaborative, real-world environments.
+          <br />
+          Building multiple projects has taught me how to structure code thoughtfully, communicate effectively, and deliver end-to-end solutions. I enjoy the harmony between clean, intuitive user experiences and reliable backend logic.
+          <br /><br />
+          I'm always looking for a place where I can contribute to meaningful work, grow alongside talented people, and continue pushing myself creatively.
         </p>
         <div>
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Skills</h3>

@@ -20,10 +20,10 @@ export default function HeroSection() {
           <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Thommie Wallin
           </h1>
+          <span className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Fullstack Web Developer</span>
 
           <p className="text-gray-600 mb-8">
-            Fullstack Web Developer — I build accessible, responsive web experiences. (Short
-            intro placeholder)
+            Skilled in building modern, responsive and user-focused web applications. I work across the full stack — from intuitive interfaces to scalable backend solutions. Passionate about clean code, great UX, and solving real problems with practical solutions.
           </p>
 
           <div className="flex justify-center gap-4">
