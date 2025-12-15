@@ -5,7 +5,7 @@ export default function ContactSection() {
     <section id="contact" className="w-full py-16 px-6">
       <div className="max-w-md mx-auto flex flex-col items-center gap-4">
         <h2 className="text-3xl font-bold text-gray-900">Contact</h2>
-        <p className="text-gray-600 text-center">I'm open to new opportunities and collaborations. Reach out via the links below or send a message using the form.</p>
+        <p className="text-gray-600 text-center">I'm open to new opportunities and collaborations. Reach out via the links below or send me a message.</p>
 
         <div className="flex gap-4 mt-2">
           <a
