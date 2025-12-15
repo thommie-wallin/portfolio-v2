@@ -1,14 +1,8 @@
 import { useState } from 'react'
 import { smoothScrollToId } from '../utils/smoothScroll';
-// import logo from '../assets/logo.webp';
 import logo from '../assets/logo.webp';
 
-interface NavbarProps {
-  /** Text shown in the left-side brand/link. */
-  logoText?: string
-}
-
-export default function Navbar({ logoText = 'Your Name' }: NavbarProps) {
+export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
@@ -28,7 +22,7 @@ export default function Navbar({ logoText = 'Your Name' }: NavbarProps) {
             className="text-xl font-bold text-gray-900"
             onClick={(e) => smoothScrollToId(e, 'hero')}
           >
-            {logoText}
+            Thommie Wallin
           </a>
         </div>
 

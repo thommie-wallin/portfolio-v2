@@ -9,12 +9,12 @@ function App() {
 
   return (
     <>
-      <Navbar logoText="Thommie Wallin" />
+      <Navbar />
       <HeroSection />
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
-      <Footer name="Thommie Wallin" />
+      <Footer />
     </>
   )
 }

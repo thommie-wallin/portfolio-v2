@@ -28,13 +28,13 @@ export default function ContactSection() {
             LinkedIn
           </a>
 
-          <a
+          {/* <a
             href="/resume.pdf"
             aria-label="Download resume (PDF)"
             className="text-gray-800 hover:underline focus:outline-2 focus:outline-offset-2"
           >
             Resume
-          </a>
+          </a> */}
         </div>
 
         <form
