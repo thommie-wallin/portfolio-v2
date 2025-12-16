@@ -7,7 +7,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article
-      className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+      className="flex flex-col h-full bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
       aria-labelledby={`project-title-${project.id}`}
     >
       {/* Image Section */}
@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Content Section */}
-      <div className="p-6">
+      <div className="flex flex-col flex-1 p-6">
         <h3
           id={`project-title-${project.id}`}
           className="text-xl font-bold text-gray-900 mb-2"
@@ -50,7 +50,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Links Section */}
-        <div className="flex gap-3">
+        <div className="flex gap-3 mt-auto">
           {project.repositoryUrl && (
             <a
               href={project.repositoryUrl}
