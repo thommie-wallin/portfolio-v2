@@ -13,12 +13,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* Image Section */}
       <div className="w-full h-48 bg-gray-200 overflow-hidden">
         {project.imageUrl ? (
-          <img
-            src={project.imageUrl}
-            alt={`${project.title} project thumbnail`}
-            loading="lazy"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-          />
+            <img
+              src={project.imageUrl}
+              alt={`${project.title} project thumbnail`}
+              loading="lazy"
+              decoding="async"
+              // fetchPriority="low"
+              className="w-full h-full hover:scale-105 transition-transform duration-300"
+            />
         ) : (
           <div className="w-full h-full bg-gray-300" aria-label="Project image placeholder" />
         )}

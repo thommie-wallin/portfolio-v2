@@ -10,7 +10,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="hero" aria-labelledby="hero-heading" className="w-full py-24">
+    <section id="hero" aria-labelledby="hero-heading" className="w-full h-dvh flex items-center">
       <div className="max-w-3xl mx-auto text-center px-6">
         <div
           className={`transition-all duration-700 ease-out ${

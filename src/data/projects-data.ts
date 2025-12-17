@@ -1,3 +1,7 @@
+import plantCareThumb from "../assets/projects/project-plantcare-thumb.webp";
+import recipeThumb from "../assets/projects/project-recipes-thumb.webp";
+import weatherThumb from "../assets/projects/project-weather-thumb.webp";
+
 export interface Project {
   id: string;
   title: string;
@@ -12,10 +16,9 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'Plant Care',
-    description: 'An application for plant lovers to organize and maintain a collection of plants, complete with personalized care instructions.',
+    description: 'A fullstack application for plant lovers to organize and maintain a collection of plants, complete with personalized care instructions.',
     technologies: ['React', 'JavaScript', 'Express', 'MongoDB', 'JWT'],
-    imageUrl: '',
-    // imageUrl: 'https://placehold.co/600x400',
+    imageUrl: plantCareThumb,
     repositoryUrl: 'https://github.com/thommie-wallin/plant-care-fullstack-project',
     liveUrl: '',
   },
@@ -24,8 +27,7 @@ export const projects: Project[] = [
     title: 'Recipe Application',
     description: 'Search for recipes by browsing different food categories from an external API. Save your favourite recipes, or create your own recipes and organize them in a list.',
     technologies: ['Angular', 'TypeScript', 'Angular Material', 'RxJS'],
-    imageUrl: '',
-    // imageUrl: 'https://placehold.co/600x400',
+    imageUrl: recipeThumb,
     repositoryUrl: 'https://github.com/thommie-wallin/angular-recipe-application',
     liveUrl: 'https://angular-recipes-application.netlify.app/',
   },
@@ -34,8 +36,7 @@ export const projects: Project[] = [
     title: 'Weather Application',
     description: 'Use this application to search the latest weather conditions and forecasts by city name or based on user position from an external API.',
     technologies: ['React', 'JavaScript', 'React Router DOM', 'Leaflet', 'ESLint'],
-    imageUrl: '',
-    // imageUrl: 'https://placehold.co/600x400',
+    imageUrl: weatherThumb,
     repositoryUrl: 'https://github.com',
     liveUrl: 'https://react-weather-applications.netlify.app/',
   },
