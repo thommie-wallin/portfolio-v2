@@ -1,13 +1,4 @@
-
-// Placeholder icons
-const skills = [
-  { name: "React", icon: "⚛️" },
-  { name: "TypeScript", icon: "🟦" },
-  { name: "Tailwind CSS", icon: "💨" },
-  { name: "JavaScript", icon: "📜" },
-  { name: "HTML5", icon: "🔤" },
-  { name: "CSS3", icon: "🎨" },
-];
+import Skills from '../components/Skills';
 
 export default function AboutSection() {
   return (
@@ -23,7 +14,7 @@ export default function AboutSection() {
         >
           About Me
         </h2>
-        <p className="text-gray-600 text-base font-extralight">
+        <p className="text-gray-600">
           I first discovered my path as a developer the moment I solved a problem I had been stuck on for days — then watched the solution run flawlessly, over and over again. That sense of accomplishment, of finally unlocking the right approach for a project, is what fuels my excitement for web development. As a committed learner, I also love the blend of creativity, logic, and technology that this field brings together. 
           <br /><br />
           Today, I'm a Full-Stack Developer with a two-year education that gave me a solid foundation in modern web development and experience working in collaborative, real-world environments.
@@ -32,22 +23,7 @@ export default function AboutSection() {
           <br /><br />
           I'm always looking for a place where I can contribute to meaningful work, grow alongside talented people, and continue pushing myself creatively.
         </p>
-        <div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Skills</h3>
-          <ul className="flex flex-wrap gap-4" aria-label="Skills list">
-            {skills.map((skill) => (
-              <li
-                key={skill.name}
-                className="flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg text-gray-700 text-sm focus:outline-2 focus:outline-offset-2"
-                tabIndex={0}
-                aria-label={skill.name}
-              >
-                <span aria-hidden="true" className="text-lg">{skill.icon}</span>
-                <span>{skill.name}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Skills />
       </div>
     </section>
   );
