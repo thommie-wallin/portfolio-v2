@@ -17,12 +17,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               src={project.imageUrl}
               alt={`${project.title} project thumbnail`}
               loading="lazy"
-              decoding="async"
+              // decoding="async"
               // fetchPriority="low"
               className="w-full h-full hover:scale-105 transition-transform duration-300"
             />
         ) : (
-          <div className="w-full h-full bg-gray-300" aria-label="Project image placeholder" />
+          <div className="w-full h-full bg-gray-100" aria-label="Project image placeholder" />
         )}
       </div>
 
@@ -57,7 +57,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <a
               href={project.repositoryUrl}
               target="_blank"
-              rel="noopener noreferrer"
               className="flex-1 text-center text-sm font-medium text-gray-900 bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg transition-colors focus:outline-2 focus:outline-offset-2 focus:outline-gray-500"
               aria-label={`View ${project.title} repository on GitHub`}
             >
@@ -68,7 +67,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <a
               href={project.liveUrl}
               target="_blank"
-              rel="noopener noreferrer"
               className="flex-1 text-center text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors focus:outline-2 focus:outline-offset-2 focus:outline-gray-500"
               aria-label={`View ${project.title} live demo`}
             >

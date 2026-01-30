@@ -11,7 +11,6 @@ export default function ContactSection() {
           <a
             href="https://github.com/thommie-wallin"
             target="_blank"
-            rel="noopener noreferrer"
             aria-label="GitHub — opens in a new tab"
             className="text-gray-800 hover:underline focus:outline-2 focus:outline-offset-2"
           >
@@ -21,7 +20,6 @@ export default function ContactSection() {
           <a
             href="https://www.linkedin.com/in/thommie-wallin"
             target="_blank"
-            rel="noopener noreferrer"
             aria-label="LinkedIn — opens in a new tab"
             className="text-gray-800 hover:underline focus:outline-2 focus:outline-offset-2"
           >
@@ -63,7 +61,7 @@ export default function ContactSection() {
             </label>
             <input
               id="email"
-              name="_replyto"
+              name="email"
               type="email"
               required
               placeholder="your.email@example.com"
