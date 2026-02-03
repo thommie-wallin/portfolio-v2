@@ -5,13 +5,12 @@ export default function ContactSection() {
     <section id="contact" className="w-full py-16 px-6">
       <div className="max-w-md mx-auto flex flex-col items-center gap-4">
         <h2 className="text-3xl font-bold text-gray-900">Contact</h2>
-        <p className="text-gray-600 text-center">I'm open to new opportunities and collaborations. Reach out via the links below or send a message using the form.</p>
+        <p className="text-gray-600 text-center">I'm open to new opportunities and collaborations. Reach out via the links below or send me a message.</p>
 
         <div className="flex gap-4 mt-2">
           <a
             href="https://github.com/thommie-wallin"
             target="_blank"
-            rel="noopener noreferrer"
             aria-label="GitHub — opens in a new tab"
             className="text-gray-800 hover:underline focus:outline-2 focus:outline-offset-2"
           >
@@ -21,20 +20,19 @@ export default function ContactSection() {
           <a
             href="https://www.linkedin.com/in/thommie-wallin"
             target="_blank"
-            rel="noopener noreferrer"
             aria-label="LinkedIn — opens in a new tab"
             className="text-gray-800 hover:underline focus:outline-2 focus:outline-offset-2"
           >
             LinkedIn
           </a>
 
-          <a
+          {/* <a
             href="/resume.pdf"
             aria-label="Download resume (PDF)"
             className="text-gray-800 hover:underline focus:outline-2 focus:outline-offset-2"
           >
             Resume
-          </a>
+          </a> */}
         </div>
 
         <form
@@ -63,7 +61,7 @@ export default function ContactSection() {
             </label>
             <input
               id="email"
-              name="_replyto"
+              name="email"
               type="email"
               required
               placeholder="your.email@example.com"
