@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <a
               href={project.repositoryUrl}
               target="_blank"
-              className="flex-1 text-center text-sm font-medium text-gray-900 bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg transition-colors focus:outline-2 focus:outline-offset-2 focus:outline-gray-500"
+              className="flex-1 text-center text-sm font-medium text-gray-900 bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-lg transition-colors duration-200 focus:outline-2 focus:outline-offset-2 focus:outline-gray-500"
               aria-label={`View ${project.title} repository on GitHub`}
             >
               GitHub
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <a
               href={project.liveUrl}
               target="_blank"
-              className="flex-1 text-center text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors focus:outline-2 focus:outline-offset-2 focus:outline-gray-500"
+              className="flex-1 text-center text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors duration-200 focus:outline-2 focus:outline-offset-2 focus:outline-gray-500"
               aria-label={`View ${project.title} live demo`}
             >
               Live Demo

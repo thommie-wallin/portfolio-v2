@@ -64,7 +64,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={(e) => smoothScrollToId(e, l.id)}
-              className="text-gray-700 hover:text-gray-900 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"
+              className="text-gray-700 hover:text-gray-900 transition-colors duration-200 px-4 py-2 rounded-md focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"
             >
               {l.label}
             </a>
