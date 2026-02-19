@@ -10,7 +10,7 @@ export default function AboutSection() {
       <div className="max-w-4xl mx-auto space-y-6">
         <h2
           id="about-heading"
-          className="text-3xl font-bold text-gray-900 mb-2"
+          className="text-3xl font-semibold mb-3"
         >
           About Me
         </h2>

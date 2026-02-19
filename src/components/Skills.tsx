@@ -11,7 +11,7 @@ function SkillGrid({ skills }: SkillGridProps) {
       {skills.map((skill) => (
         <li
           key={skill.name}
-          className="flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg text-gray-700 text-sm"
+          className="cursor-default select-none flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-lg text-gray-700 text-sm"
           tabIndex={0}
           aria-label={skill.name}
         >

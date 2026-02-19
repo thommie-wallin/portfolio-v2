@@ -13,7 +13,7 @@ export default function HeroSection() {
     <section id="hero" aria-labelledby="hero-heading" className="w-full h-dvh flex items-center">
       <div className="max-w-3xl mx-auto text-center px-6">
         <div
-          className={`transition-all duration-700 ease-out ${
+          className={`transition-all duration-500 ease-out ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
@@ -30,7 +30,7 @@ export default function HeroSection() {
             <a
               href="#projects"
               onClick={(e) => smoothScrollToId(e, 'projects')}
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-sm font-medium shadow-sm hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 transition"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-sm font-medium shadow-sm hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 transition-colors duration-200"
               aria-label="View my work (scroll to projects)"
             >
               View My Work
@@ -39,7 +39,7 @@ export default function HeroSection() {
             <a
               href="#contact"
               onClick={(e) => smoothScrollToId(e, 'contact')}
-              className="inline-block border border-blue-600 text-blue-600 px-6 py-3 rounded-md text-sm font-medium hover:bg-blue-50 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 transition"
+              className="inline-block border border-blue-600 text-blue-600 px-6 py-3 rounded-md text-sm font-medium hover:bg-blue-50 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 transition-colors duration-200"
               aria-label="Contact me"
             >
               Contact Me

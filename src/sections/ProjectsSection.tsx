@@ -8,7 +8,7 @@ export default function ProjectsSection() {
         <div className="mb-12">
           <h2
             id="projects-heading"
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+            className="text-3xl font-semibold mb-3"
           >
             Featured Projects
           </h2>
